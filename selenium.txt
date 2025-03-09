@@ -1,0 +1,9 @@
+Path="./src/";
+FileInputStrean FIP=ne FileInputStream(path);
+HSSFWorkbook wb=new HSSFWorkbook(FIP);
+HSSFSheet sh=wb.getSheet("name");
+
+int rowCount=sh.getLastRowNum()-sh.getFirstRowNum();
+for(int i=0;i<rowCount;i++){
+	String Uname=sh.getRow(i).getCell(0).grtStringCellValue();
+}
